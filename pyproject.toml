@@ -26,6 +26,8 @@ classifiers = [
 requires-python = ">=3.10"
 version = "0.1.0"
 dependencies = [
+  "agno>=2.6.19,<3",
+  "openai>=2.44.0,<3"
 ]
 
 [project.urls]
@@ -42,8 +44,6 @@ platforms = ["linux-64", "osx-64", "osx-arm64", "win-64", "linux-aarch64"]
 # must match project.dependencies (sans python and conda)
 python = ">=3.10"
 conda = ">=26.5"
-agno = ">=2.6.19,<3"
-openai = ">=2.44.0,<3"
 
 [tool.pixi.pypi-dependencies]
 "conda-encouragement" = { path  = ".", editable = true }
